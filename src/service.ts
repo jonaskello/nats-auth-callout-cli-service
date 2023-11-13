@@ -170,7 +170,7 @@ async function msgHandler(
       userProfile.permissions,
       {
         // Audience contains the account in non-operator mode.
-        aud: "APP",
+        aud: userProfile.account,
       }
     );
   } catch (e) {
